@@ -1,0 +1,361 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8959-1" />
+<title>Help</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="tooltip.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/reset-fonts-grids/reset-fonts-grids.css" />
+
+<!-- Individual YUI CSS files --> 
+<link rel="stylesheet" type="text/css" href="yui/build/container/assets/skins/sam/container.css"> 
+<link rel="stylesheet" type="text/css" href="yui/build/resize/assets/skins/sam/resize.css"> 
+<link rel="stylesheet" type="text/css" href="yui/build/layout/assets/skins/sam/layout.css"> 
+<link rel="stylesheet" type="text/css" href="yui/build/menu/assets/skins/sam/menu.css">
+<link rel="stylesheet" type="text/css" href="yui/build/slider/assets/skins/sam/slider.css"> 
+<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.18.custom.css">
+<!-- Individual YUI JS files --> 
+<script type="text/javascript" src="yui/build/utilities/utilities.js"></script> 
+<script type="text/javascript" src="yui/build/container/container.js"></script> 
+<script type="text/javascript" src="yui/build/resize/resize.js"></script> 
+<script type="text/javascript" src="yui/build/layout/layout.js"></script> 
+<script type="text/javascript" src="yui/build/menu/menu.js"></script>
+<script type="text/javascript" src="yui/build/dragdrop/dragdrop-min.js"></script> 
+<script type="text/javascript" src="yui/build/dom/dom-min.js"></script>
+<script type="text/javascript" src="yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="yui/build/slider/slider-min.js"></script> 
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="php.default.min.js"></script>
+<script type="text/javascript" src="tooltip.js"></script>
+<script type="text/javascript" src="gauge/gauge.js"></script>
+
+</head>
+
+<body class=" yui-skin-sam">
+
+<div id="status"><font color="black">=== Технологический процесс остановлен (Ручное управление) ===</font></div>
+<div id="top1">
+    <div id="productsandservices" class="yuimenubar yuimenubarnav">
+        <div class="bd">
+            <ul class="first-of-type">
+
+                <li class="yuimenubaritem first-of-type">
+                    <a class="yuimenubaritemlabel" href="#">Меню</a>
+                </li>
+				<li class="yuimenubaritem first-of-type">
+                    <a class="yuimenubaritemlabel" href="#">Режим работы</a>
+                </li>
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#">Аварийные ситуации</a>
+                </li>
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#">Информация</a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="maxSit"><input type="text" style="width:20px;height:15px;" /></div> -->
+
+<div id="bottom1"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse justo nibh, pharetra at, adipiscing ullamcorper.</p></div>
+<div id="right1">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse justo nibh, pharetra at, adipiscing ullamcorper.</p>
+</div>
+<div id="left1" style="overflow-x: hidden;">
+    <div id="current_situation">
+	<table style="border-spacing:5px;border-collapse: separate;">
+		<tr>
+			<td>
+				Температура воздуха:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar1"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U1" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Температура в машинном зале:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar2"></div>
+			</td>
+		</tr>		
+		<tr>
+			<td>				
+				<input class="uinput" type="text" value="" id="U2" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Температура в ложном потолке:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar3"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+				<input class="uinput" type="text" value="" id="U3" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Температура в колпаке:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar4"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U4" />
+				<hr style="margin-top:8px;" />				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Температура речной воды:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar5"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U5" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				рН речной воды:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar6"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U6" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Уровень в бассейне брака:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar7"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U7" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Цена энергии, 1/квтч:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar8"></div>	
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+				<input class="uinput" type="text" value="" id="U8" />
+					<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Цена речной воды, 1/1000 м3:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar9"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U9" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Цена сброса, 1/кг:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar10"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U10" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Дебет реки, м3/ с:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar11"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U11" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Концентрация стока:
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="bar" id="ubar12"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="uinput" type="text" value="" id="U12" />
+				<hr style="margin-top:8px;" />
+			</td>
+		</tr>
+	</table>
+	</div>
+</div>
+
+<div id="center2" style="background-color: black;">
+	<table>
+	<tr>
+	<td>
+		<canvas id="r1" width="95" height="95"></canvas>
+	</td>		
+	<td>
+		<canvas id="r2" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r3" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r4" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r5" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r6" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r7" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r8" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r9" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r10" width="95" height="95"></canvas>
+	</td>
+	<td>
+		<canvas id="r11" width="95" height="95"></canvas>
+	</td>
+	</tr>
+	<tr>
+
+		<td>
+			<a id="1add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC1"  /><a id="1minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="2add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC2" /><a id="2minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="3add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC3"  /><a id="3minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="4add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC4"  /><a id="4minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="5add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC5"  /><a id="5minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="6add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC6"  /><a id="6minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="7add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC7"  /><a id="7minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="8add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC8"  /><a id="8minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="9add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC9"  /><a id="9minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="10add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC10"  /><a id="10minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+			<td><a id="11add" href="javascript:void(0);" class="plus"><img src="images/add.png"/></a><input class="r" type="text" id="RC11"  /><a id="11minus" href="javascript:void(0);" class="minus"><img src="images/delete.png"/></a>
+		</td>
+	
+	</tr>
+	</table>
+</div>
+
+<div id="center1" style="position:relative;top:99px;">
+<canvas id="canvas"></canvas>
+</div>
+
+	<!--<div id="right">
+		
+	</div>-->
+
+<script type="text/javascript" src="yahoo.js"></script>
+<script type="text/javascript" src="process.js"></script>
+</body>
+</html>
+

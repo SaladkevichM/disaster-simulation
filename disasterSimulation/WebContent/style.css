@@ -1,0 +1,124 @@
+
+	body 
+	{
+		/*color: white !important;*/
+	}
+	
+	#sliderbg
+	{
+		position: fixed;
+		right:200px;
+		top:2px;
+		z-index:999;
+		background: url(bg-h.gif);
+		width:80px;
+	}
+	
+	#maxSit
+	{
+		position:absolute;
+		z-index:55;
+		top:50px;
+		right:100px;
+	}
+	
+	.bar 
+	{
+		width:155px;
+		height:11px;
+		background: #FF4500;
+	}
+	
+	.uinput
+	{
+		font-size: 12px;
+		height: 12px;
+		width: 155px;
+	}
+	
+	#status 
+	{
+		left: 568px;
+		position: absolute;
+		top: 7px;
+		z-index: 2;
+	}
+	
+	.plus
+	{
+		bottom: 8px;
+		margin-left: 9px;
+		position: relative;
+	}
+	
+	.minus
+	{
+		bottom: 8px;
+		position: relative;
+	}
+	
+	#center2 td input
+	{
+		
+		position: relative;
+		top: -11px;
+		width: 43px;
+	}
+	
+	input 
+	{
+		border:solid 1px #848388;
+		text-align:right;
+	}
+	
+	.yui-skin-sam .yui-layout .yui-layout-unit div.yui-layout-bd  #center1
+	{
+		background-color: black !important;
+		color: white !important;
+	}
+
+ #productsandservices2 {        
+        position: static;
+    }
+	
+	.yui-skin-sam .yui-layout .yui-layout-unit div.yui-layout-bd-noft {
+    border-bottom: none;
+}
+
+    /*
+        For IE 6: trigger "haslayout" for the anchor elements in the root Menu by 
+        setting the "zoom" property to 1.  This ensures that the selected state of 
+        MenuItems doesn't get dropped when the user mouses off of the text node of 
+        the anchor element that represents a MenuItem's text label.
+    */
+
+    #productsandservices2 .yuimenuitemlabel {
+        _zoom: 1;
+    }
+
+    #productsandservices2 .yuimenu .yuimenuitemlabel {
+        _zoom: normal;
+    }
+    /*
+        Turn off the border on the top unit since Menu has it's own border
+    */
+    .yui-skin-sam .yui-layout .yui-layout-unit-top div.yui-layout-bd {
+        border: none;
+    }
+    /*
+        Change some of the Menu colors
+    */
+    .yui-skin-sam .yuimenu .bd {
+        background-color: #F2F2F2;
+    }
+    #productsandservices2 .bd {
+        border: none;
+    }
+    #productsandservices2 .bd .first-of-type .bd {
+        border: 1px solid #808080;
+    }
+	
+	.hidden
+	{
+		display:none;
+	}

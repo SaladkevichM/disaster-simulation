@@ -1,0 +1,35 @@
+/*	CSS-Framework
+
+	Version		: 0.3.1
+	Author		: Aleksej Romanovskij (http://css-framework.ru)
+	License		: Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
+
+------------------------------ */
+		
+/* Utilites
+------------------------------ */
+
+* { margin: 0; padding: 0; }
+
+*:focus { outline: none; }
+.hidden { display: none; }
+.show { display: block!important; }
+.no-margin { margin: 0!important; }
+.no-padding { padding: 0!important; }
+.no-bg { background: none!important; }
+.no-border, a img { border: none!important; }
+.container:after, .columns:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.img-repl { text-indent: -9999px; overflow: hidden; display: block; }
+.cc { clear: both; }
+
+/* Main styles
+------------------------------ */
+
+html { height: 100%; color: #000; background: #f4f4f4; font: 0.75em/1.5 Arial, Helvetica, sans-serif; }
+body { height: auto !important; height: 100%; min-height: 100%; } /* body height 100% */
+
+a { color: #0066сс; }
+a:visited {  }
+a:hover {  }
+a:active {  }
+			
